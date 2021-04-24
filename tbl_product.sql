@@ -22,6 +22,36 @@ SET time_zone = "+00:00";
 --
 
 -- --------------------------------------------------------
+   
+--
+-- Table structure for table `admin`
+--
+
+CREATE TABLE `admin` (
+  `admin_id` int(11) UNSIGNED NOT NULL,
+  `department_id` varchar(900) DEFAULT NULL,
+  `admin_name` varchar(100) DEFAULT NULL,
+  `admin_cell_no` varchar(10) DEFAULT NULL,
+  `admin_email` varchar(50) DEFAULT NULL,
+  `admin_address` longtext,
+  `admin_birth_date` date DEFAULT NULL,
+  `admin_anniversary_date` date DEFAULT NULL,
+  `admin_password` varchar(100) DEFAULT NULL,
+  `admin_added_ip` varchar(20) DEFAULT NULL,
+  `admin_added_on` datetime DEFAULT NULL,
+  `admin_role` varchar(20) DEFAULT NULL,
+  `admin_photo` varchar(500) DEFAULT NULL,
+  `admin_sip` varchar(20) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `admin`
+--
+
+INSERT INTO `admin` (`admin_id`, `department_id`, `admin_name`, `admin_cell_no`, `admin_email`, `admin_address`, `admin_birth_date`, `admin_anniversary_date`, `admin_password`, `admin_added_ip`, `admin_added_on`, `admin_role`, `admin_photo`, `admin_sip`) VALUES
+(1, 'a:7:{i:0;s:1:\"1\";i:1;s:1:\"2\";i:2;s:1:\"3\";i:3;s:1:\"4\";i:4;s:1:\"5\";i:5;s:1:\"6\";i:6;s:1:\"7\";}', 'Admin', '9988776655', 'nilpatil989@gmail.com', 'PUNE', NULL, NULL, '$2y$10$NmbgBL/Gl2Pr5kavRE/.mOQWf7rA6Tbn/3Uw4mM2JmfWm/qC2Hvxm', NULL, NULL, 'admin', 'default.png', '8001');
+
+-- --------------------------------------------------------
 
 --
 -- Table structure for table `tbl_product`
